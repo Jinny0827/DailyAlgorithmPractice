@@ -33,7 +33,56 @@ public class Day16RobotCleaner {
                 map[i][j] = scanner.nextInt();
             }
         }
+
+        // 북->동->남->서 순서로 행/열 변화량
+        int[] dr = {-1, 0, 1, 0};
+        int[] dc = {0, 1, 0, -1};
+
+        int count = 0;
+
+        while(true) {
+            // 1. 현재 칸 청소 후 마킹 (2 처리)
+            if (map[r][c] == 0) {
+                map[r][c] = 2; // 청소 완료 마킹처리
+                count++; // 청소 후 갯수 증가
+            }
+
+            // 2. 왼쪽 회전
+            boolean moved = false;
+            for (int i = 0; i < 4; i++) {
+                d = (d + 3) % 4;
+
+                // 회전의 방향에 따라 달라짐
+                int nr = r + dr[d];
+                int nc = c + dc[d];
+
+                if (map[nr][nc] == 0) {
+                    // 왼쪽 회전 후 해당 칸 청소 여부 확인
+                    r = nr;
+                    c = nc;
+                    moved = true;
+                    break;
+                }
+            }
+
+
+            // 3. 뒤 방향 (후진) -> 못 움직였다면
+            if(!moved) {
+                int back = (d + 2) % 4;
+
+                int br = r + dr[back];
+                int bc = c + dc[back];
+
+                if(map[br][bc] == 1) {
+                    // 후진시에도 벽이면
+                    break;
+                }
+
+                r = br;
+                c = bc;
+            }
+        }
+
+        System.out.println(count);
     }
-
-
 }
