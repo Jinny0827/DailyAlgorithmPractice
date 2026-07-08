@@ -45,6 +45,7 @@
     {"day": 44, "source": "백준 #2206", "title": "벽 부수고 이동하기", "topic": "BFS/상태탐색"},
     {"day": 45, "source": "프로그래머스 #42746", "title": "가장 큰 수", "topic": "정렬"},
     {"day": 46, "source": "백준 #1931", "title": "회의실 배정", "topic": "그리디"},
-    {"day": 47, "source": "백준 #12865", "title": "평범한 배낭", "topic": "DP/배낭문제"}
+    {"day": 47, "source": "백준 #12865", "title": "평범한 배낭", "topic": "DP/배낭문제"},
+    {"day": 48, "source": "백준 #9663", "title": "N-Queen", "topic": "백트래킹"}
   ]
 }
