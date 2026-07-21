@@ -49,6 +49,6 @@
     {"day": 48, "source": "백준 #9663", "title": "N-Queen", "topic": "백트래킹"},
     {"day": 50, "source": "백준 #6549", "title": "히스토그램에서 가장 큰 직사각형", "topic": "스택"},
     {"day": 51, "source": "프로그래머스", "title": "블록 이동하기", "topic": "DFS/BFS"},
-    {"day": 52, "source": "백준 #2110", "title": "공유기 설치", "topic": "이진탐색"}
+    {"day": 53, "source": "백준 #1517", "title": "버블 소트", "topic": "정렬/병합정렬(역순쌍)"}
   ]
 }
