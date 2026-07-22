@@ -16,7 +16,7 @@ import java.util.StringTokenizer;
  * 이진탐색을 사용하는 이유 = 중간 값까지만 성공할거란 확신이 있을 경우 뒷 결과를 날리겠다는 생각으로 가운데를 쳐서 아랫부분만 계산
  *
  */
-public class Day52InstallingRouter {
+public class Day53InstallingRouter {
 
     public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
