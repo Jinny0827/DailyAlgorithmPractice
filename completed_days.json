@@ -59,6 +59,7 @@
     {"day": 60, "source": "백준 #2213", "title": "트리의 독립집합", "topic": "트리DP"},
     {"day": 62, "source": "백준 #11049", "title": "행렬 곱셈 순서", "topic": "DP/구간DP"},
     {"day": 63, "source": "백준 #1450", "title": "냅색문제", "topic": "투포인터"},
-    {"day": 64, "source": "백준 11003번", "title": "최솟값 구하기", "topic": "슬라이딩 윈도우"}
+    {"day": 64, "source": "백준 11003번", "title": "최솟값 구하기", "topic": "슬라이딩 윈도우"},
+    {"day": 65, "source": "백준 #1167", "title": "트리의 지름", "topic": "트리/DFS"}
   ]
 }
