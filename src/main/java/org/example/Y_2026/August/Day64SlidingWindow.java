@@ -43,7 +43,7 @@ public class Day64SlidingWindow {
 
     }
 
-    private static int[] slidingWindow(int[] arr, int N, int L) {
+    private static int[] slidingWindow(int[] A, int N, int L) {
         // 단조덱 사용
         // 덱(인덱스 저장용)과 결과 배열 D를 준비한다.
         int[] deck  = new int[N];
@@ -56,7 +56,7 @@ public class Day64SlidingWindow {
         for(int i = 0; i < N; i++) {
             
             // 덱이 비어있지 않고, 덱 맨 뒤 인덱스의 값이 A[i]보다 크거나 같으면 → 맨 뒤를 계속 제거한다.
-            while(head <= tail && arr[deck[tail]] >= arr[i]) {
+            while(head <= tail && A[deck[tail]] >= A[i]) {
                 // 맨뒤인덱스가 앞인덱스보다 크고 맨뒤인덱스값이이 현재인덱스값보다 크면 맨뒤인덱스의 범위를 줄여준다. -> 맨뒤인덱스를 작은값으로 이동
                 tail--;
             }
@@ -73,7 +73,7 @@ public class Day64SlidingWindow {
             }
 
             // D[i] = A[맨앞인덱스] 로 저장한다.
-            D[i] = arr[deck[head]];
+            D[i] = A[deck[head]];
         }
 
         // 순회가 끝나면 D 배열이 정답이다.
