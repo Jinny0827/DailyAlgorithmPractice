@@ -61,6 +61,8 @@
     {"day": 63, "source": "백준 #1450", "title": "냅색문제", "topic": "투포인터"},
     {"day": 64, "source": "백준 11003번", "title": "최솟값 구하기", "topic": "슬라이딩 윈도우"},
     {"day": 65, "source": "백준 #1167", "title": "트리의 지름", "topic": "트리/DFS"},
-    {"day": 66, "source": "백준 #16236", "title": "아기 상어", "topic": "구현/시뮬레이션(BFS)"}
+    {"day": 66, "source": "백준 #16236", "title": "아기 상어", "topic": "구현/시뮬레이션(BFS)"},
+    {"day": 67, "source": "백준 #2150", "title": "Strongly Connected Component", "topic": "강한연결요소(SCC)"}
+
   ]
 }
