@@ -17,7 +17,16 @@ import java.util.*;
  * 다음 줄: 각 건물을 짓는데 걸리는 시간 D[1..N]
  * 다음 K줄: X Y (건물 X 완성 후 건물 Y 착공 가능)
  * 마지막 줄: 승리에 필요한 건물 번호 W
- *
+ * 
+ * 입력 >
+ * 2 (테스트케이스 개수)
+ * 4 4 (건물 개수, 규칙 개수)
+ * 10 1 100 10 (건물별 건축 시간)
+ * 1 2 (X 완성 후 Y 착공 규칙)
+ * 1 3
+ * 2 4
+ * 3 4
+ * 4 (W)
  */
 public class Day68ACMCraft {
 
@@ -47,7 +56,10 @@ public class Day68ACMCraft {
             for(int k = 0; k < N; k++) {
                 graph[k] = new ArrayList<>();
             }
+
+            // 진입 차수 배열 (Y건물이 착공되기 전에 끝나야 하는 선행 건물(X)의 개수)
             int[] indegree = new int[N];
+            // 건물별 건축 시간 계산 결과를 담는 배열
             int[] dp = new int[N];
 
             for(int z = 0; z < K; z++) {
@@ -63,6 +75,7 @@ public class Day68ACMCraft {
             
             // dp 초기화 + 진입차수 0인 노드 큐에 삽입
             for (int j = 0; j < N; j++) {
+                // i번 건물 완성되는 시간 
                 dp[j] = D[j];
                 if (indegree[j] == 0) {
                     queue.offer(j);
@@ -70,10 +83,19 @@ public class Day68ACMCraft {
             }
 
             while(!queue.isEmpty()) {
-
+                int cur = queue.poll();
+                for (int next : graph[cur]) {
+                    dp[next] = Math.max(dp[next], dp[cur] + D[next]);
+                    indegree[next]--;
+                    if(indegree[next] == 0) {
+                        queue.offer(next);
+                    }
+                }
             }
 
-
+            st = new StringTokenizer(br.readLine());
+            int W = Integer.parseInt(st.nextToken()) - 1;
+            System.out.println(dp[W]);
         }
     }
 
