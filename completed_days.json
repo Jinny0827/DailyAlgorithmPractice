@@ -63,7 +63,9 @@
     {"day": 65, "source": "백준 #1167", "title": "트리의 지름", "topic": "트리/DFS"},
     {"day": 66, "source": "백준 #16236", "title": "아기 상어", "topic": "구현/시뮬레이션(BFS)"},
     {"day": 67, "source": "백준 #2150", "title": "Strongly Connected Component", "topic": "강한연결요소(SCC)"},
-    {"day": 68, "source": "백준 #1005", "title": "ACM Craft", "topic": "위상정렬+DP"}
-    {"day": 68, "source": "백준 #5719", "title": "거의 최단 경로", "topic": "최단경로/다익스트라 변형"}
+    {"day": 68, "source": "백준 #1005", "title": "ACM Craft", "topic": "위상정렬+DP"},
+    {"day": 68, "source": "백준 #5719", "title": "거의 최단 경로", "topic": "최단경로/다익스트라 변형"},
+    {"day": 69, "source": "백준 #2661", "title": "좋은수열", "topic": "백트래킹"}
+
   ]
 }
