@@ -73,7 +73,8 @@
     {"day": 74, "source": "백준 #1520", "title": "내리막 길", "topic": "DP/DFS메모이제이션"},
     {"day": 76, "source": "백준 #2098", "title": "외판원 순회", "topic": "DP/비트마스킹"},
     {"day": 77, "source": "백준 #2812", "title": "크게 만들기", "topic": "그리디"},
-    {"day": 78, "source": "백준 #6086", "title": "최대 유량", "topic": "네트워크 플로우/최대유량"}
+    {"day": 78, "source": "백준 #6086", "title": "최대 유량", "topic": "네트워크 플로우/최대유량"},
+    {"day": 79, "source": "백준 #1786", "title": "찾기", "topic": "KMP/문자열매칭"}
 
   ]
 }
