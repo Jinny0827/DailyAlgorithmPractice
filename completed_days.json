@@ -79,7 +79,8 @@
     {"day": 81, "source": "백준 #5670", "title": "휴대폰 자판", "topic": "트라이(Trie)"},
     {"day": 82, "source": "프로그래머스 #42897", "title": "도둑질", "topic": "DP(원형 배열)"},
     {"day": 83, "source": "프로그래머스 #81303", "title": "표 편집", "topic": "연결리스트(이중 연결 리스트 시뮬레이션)"},
-    {"day": 84, "source": "백준 #2357", "title": "최솟값과 최댓값", "topic": "세그먼트트리"}
+    {"day": 84, "source": "백준 #2357", "title": "최솟값과 최댓값", "topic": "세그먼트트리"},
+    {"day": 85, "source": "백준 #11400", "title": "단절선", "topic": "그래프/단절선(Tarjan's Bridge)"}
 
   ]
 }
